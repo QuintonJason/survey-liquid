@@ -132,7 +132,8 @@ a:focus-visible {
     text-align: center;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     margin-bottom: 10px;
 }
