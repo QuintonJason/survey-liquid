@@ -1,0 +1,132 @@
+/* Place CSS styles here */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: hotpink;
+    color: #36382E;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+}
+
+/* every header */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: hotpink;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 2px 3px #000000;
+}
+
+h1 {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 98px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p{
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.about-section {
+    display: flex;
+    gap: 20px;
+}
+
+.cat-cow {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    width: 200px;
+    border: 3px solid black;
+}
+
+/* remove underline from links */
+a {
+    color:grey;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+/* hover styles */
+a:hover {
+    color: black;
+    text-decoration: underline;
+    border: 1px solid hotpink;
+}
+
+a:focus-visible {
+    color: black;
+    text-decoration: underline;
+    border: 1px solid hotpink;
+    outline: none;
+    box-shadow: 0 0 4px black;
+}
+
+.pinky-pie-bg-image {
+    background-image: url(../img/pinky-pie.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.jpuff-bg-image {
+    background-image: url(../img/jiggaly-puff.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    margin-top: 20px;
+}
+
+.cartoon-pictures {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.cartoon-pictures a:hover img {
+    border: 3px solid hotpink;
+}
+
+.top-image {
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    border-top: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
