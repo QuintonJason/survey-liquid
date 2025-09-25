@@ -21,8 +21,8 @@ html {
 
 
 body {
-    background-color: hotpink;
-    color: #36382E;
+    background-color: aquamarine;
+    color: #1b1b1b;
     font-family: "Merriweather", serif;
     font-size: 16px;
 }
@@ -30,7 +30,7 @@ body {
 /* every header */
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: hotpink;
+    color: coral;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     text-shadow: 1px 2px 3px #000000;
@@ -49,6 +49,7 @@ h2 {
 p{
     line-height: 1.5;
     margin-top: 0;
+
 }
 
 .about-section {
@@ -129,4 +130,24 @@ a:focus-visible {
     padding: 20px;
     margin-top: 40px;
     text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    width: auto;
+    margin-top: 24px;
+}
+
+.color-input {
+    width: 50px
+}
+
+.date-input,
+.time-input,
+.checkbox-input {
+    width: auto;
 }
