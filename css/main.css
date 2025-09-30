@@ -61,13 +61,24 @@ h2 {
 p{
     line-height: 1.5;
     margin-top: 0;
-
 }
 
 .main-nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-row img {
+    width: 50px;
 }
 
 .trending-images {
@@ -77,6 +88,18 @@ p{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.trending-images a {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .trending-images img {
+        align-self: center;
+    }
 }
 
 .about-section {
