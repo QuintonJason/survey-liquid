@@ -52,6 +52,20 @@ p{
 
 }
 
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trending-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .about-section {
     display: flex;
     gap: 20px;
