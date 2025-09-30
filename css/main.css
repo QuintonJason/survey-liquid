@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.my-vertical-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .wrapper {
     max-width: 800px;
     margin-left: auto;
@@ -27,6 +33,11 @@ body {
     font-size: 16px;
 }
 
+main {
+    flex: 1;
+    /* i need this so that main takes up the remaining space */
+}
+
 /* every header */
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
@@ -40,6 +51,7 @@ h1 {
     background-color: white;
     border: 2px solid black;
     font-size: 98px;
+    margin-top: 0;
 }
 
 h2 {
