@@ -1,5 +1,13 @@
 /* Place CSS styles here */
 
+/* tablet view */
+/* @media (min-width: 768px) {} */
+
+/* desktop view */
+/* @media (min-width: 992px) {} */
+@view-transition {
+    navigation: auto;
+}
 
 * {
     box-sizing: border-box;
@@ -33,9 +41,29 @@ body {
     font-size: 16px;
 }
 
+@media (min-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 main {
     flex: 1;
     /* i need this so that main takes up the remaining space */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* every header */
@@ -50,8 +78,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     background-color: white;
     border: 2px solid black;
-    font-size: 98px;
+    font-size: 70px;
     margin-top: 0;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 98px;
+    }
 }
 
 h2 {
@@ -63,6 +97,12 @@ p{
     margin-top: 0;
 }
 
+img {
+    border: 3px solid black;
+    max-width: 100%;
+    height: auto;
+}
+
 .main-nav {
     display: flex;
     justify-content: center;
@@ -70,9 +110,9 @@ p{
 }
 
 .nav-row {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -102,9 +142,27 @@ p{
     }
 }
 
+/* tablet view */
+@media (min-width: 768px) {}
+
+/* desktop view */
+@media (min-width: 992px) {}
+
+
 .about-section {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row;
+    }
+}
+
+.about-section-image-wrapper {
+    flex: none;
 }
 
 .cat-cow {
@@ -114,10 +172,6 @@ p{
     gap: 20px;
 }
 
-img {
-    width: 200px;
-    border: 3px solid black;
-}
 
 /* remove underline from links */
 a {

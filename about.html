@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+  <title>Survey Liquid</title>
+  <meta name="description" content="This is a survey liquid website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -12,7 +12,6 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -20,19 +19,38 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,98.3,300..900;1,18..144,98.3,300..900&family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 19</p>
-  <img src="./img/giz2.jpg" alt="">
-  <a href="www.google.com">Google</a>
-  <a href="https://www.google.com/">Google</a>
-  <a href="index.html">Home #1</a>
-  <a href="/index.html">Home #2</a>
-  <a href="./index.html">Home #3</a>
+  <!-- my-vertical-container is needed to give the page an awareness of the height -->
+  <div class="my-vertical-container">
+    <header>
+      <h1>Survey Liquid</h1>
+      <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./layouts.html">Layout</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h2>About</h2>
+      <div class="about-section">
+        <div class="about-section-image-wrapper">
+          <img src="./img/giz2.jpg" alt="">
+        </div>
 
-
+        <p>Jowl boudin pancetta, ham hock kielbasa flank landjaeger ribeye burgdoggen pork loin pork picanha leberkas. Ball tip corned beef pastrami, spare ribs burgdoggen picanha leberkas ground round. Sausage strip steak shank, beef ribs ham hock brisket cow salami. Pancetta tail andouille ball tip venison short ribs, shank pastrami sausage. Turkey tongue strip steak chicken, leberkas drumstick pork loin tri-tip. Capicola cupim jowl, kevin chicken cow kielbasa boudin pancetta ham ham hock corned beef salami rump. Chislic kevin meatloaf, pork pork chop salami swine pig prosciutto.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2025 Survey Liquid</p>
+    </footer>
+  </div>
   <script src="js/main.js"></script>
 </body>
 
